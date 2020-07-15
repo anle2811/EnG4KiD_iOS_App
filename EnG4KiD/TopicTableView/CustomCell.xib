@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="topicCellTableViewCell" id="Hu6-XN-l4m" customClass="TopicCellTableViewCell" customModule="EnG4KiD" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hu6-XN-l4m" id="mmh-KD-83T">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d5f-in-z7X">
+                        <rect key="frame" x="20" y="8" width="374" height="84"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDE-nM-Nqe" userLabel="learnItemCell">
+                                <rect key="frame" x="0.0" y="0.0" width="183" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vocabulary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhc-TK-z7K">
+                                        <rect key="frame" x="84" y="30" width="91" height="24"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.74828767123287676" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dhc-TK-z7K" firstAttribute="top" secondItem="aDE-nM-Nqe" secondAttribute="top" constant="30" id="Eiw-oM-ed6"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dhc-TK-z7K" secondAttribute="trailing" constant="8" id="Hx6-QI-p74"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dhc-TK-z7K" secondAttribute="bottom" constant="30" id="lcM-T2-eEh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QM3-cm-CK1" userLabel="gameItemCell">
+                                <rect key="frame" x="191" y="0.0" width="183" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GamePlay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpZ-Rb-DTj">
+                                        <rect key="frame" x="98" y="30" width="77" height="24"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="18"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.74646832191780821" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="mpZ-Rb-DTj" firstAttribute="top" secondItem="QM3-cm-CK1" secondAttribute="top" constant="30" id="WGg-ko-nsJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="mpZ-Rb-DTj" secondAttribute="trailing" constant="8" id="k1C-An-baG"/>
+                                    <constraint firstAttribute="bottom" secondItem="mpZ-Rb-DTj" secondAttribute="bottom" constant="30" id="pXb-8c-csC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="d5f-in-z7X" secondAttribute="trailing" constant="20" id="8sn-H6-O2s"/>
+                    <constraint firstAttribute="bottom" secondItem="d5f-in-z7X" secondAttribute="bottom" constant="8" id="KLk-dN-cDK"/>
+                    <constraint firstItem="d5f-in-z7X" firstAttribute="leading" secondItem="mmh-KD-83T" secondAttribute="leading" constant="20" id="PsJ-wq-QlG"/>
+                    <constraint firstItem="d5f-in-z7X" firstAttribute="top" secondItem="mmh-KD-83T" secondAttribute="top" constant="8" id="n7D-jl-yDK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="gameItemCell" destination="QM3-cm-CK1" id="1nL-zg-Y3S"/>
+                <outlet property="learnItemCell" destination="aDE-nM-Nqe" id="UJh-7W-axJ"/>
+                <outlet property="stackViewCell" destination="d5f-in-z7X" id="pEu-Ce-0fB"/>
+            </connections>
+            <point key="canvasLocation" x="108.8" y="17.991004497751124"/>
+        </tableViewCell>
+    </objects>
+</document>
